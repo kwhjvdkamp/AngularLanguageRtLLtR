@@ -25,12 +25,17 @@ export class BaseComponent implements OnInit {
 
     ngOnInit(): void { 
         this.translateService.setDefaultLang(this.defaultLanguage);
+        /**
+         * NOTE: 
+         * It is importing to initialize correctly the *.css-file otherwise your console will show message
+         * "Refused to apply style from .... because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+         * Actually telling you it can not find the correct style sheet.
+         */
         this.initializeCssFile(this.defaultLanguage);
     }
 
     /** Method call from Html */
     switchLang(lang: string): void {
-
         const htmlTag = this.document.getElementsByTagName(
             'html'
         )[0] as HTMLHtmlElement;
@@ -61,17 +66,17 @@ export class BaseComponent implements OnInit {
 
         let bundleName = '';
         switch (lang) {
-            /**  [ <<<< noitcerid gindaer] */
+            /**  [ <<<< noitcerid gindaer <<<< ] */
             case 'ar' : {
                 bundleName = 'arabicStyle.css';
                 break;
             }
-            /**  [ <<<< noitcerid gindaer] */
+            /**  [ <<<< noitcerid gindaer <<<< ] */
             case 'he' : {
                 bundleName = 'hebrewStyle.css';
                 break;
             }
-             /** [reading direction >>>> ] */
+            /** [ >>>> reading direction >>>> ] */
             default: {
                 bundleName = 'englishStyle.css';
                 break;
