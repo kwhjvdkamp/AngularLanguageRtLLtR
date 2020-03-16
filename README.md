@@ -1,6 +1,6 @@
 # AngularLanguageRtLLtR
 
-Project originally Mustafa Saeed
+Project originally from Mustafa Saeed
 
 <https://medium.com/@mustafasaeed007/angular-localization-to-support-right-to-left-languages-7225a6c71eef>
 
