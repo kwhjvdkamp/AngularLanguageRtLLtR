@@ -61,14 +61,17 @@ export class BaseComponent implements OnInit {
 
         let bundleName = '';
         switch (lang) {
+            /**  [ <<<< noitcerid gindaer] */
             case 'ar' : {
                 bundleName = 'arabicStyle.css';
                 break;
             }
+            /**  [ <<<< noitcerid gindaer] */
             case 'he' : {
                 bundleName = 'hebrewStyle.css';
                 break;
             }
+             /** [reading direction >>>> ] */
             default: {
                 bundleName = 'englishStyle.css';
                 break;
