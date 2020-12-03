@@ -23,21 +23,20 @@
                             "src/favicon.ico",
                             "src/assets"
                         ],
-                        "extractCss": true,
                         "styles": [
                             "src/styles.css",
                             {
-                                "inject": false,
+                                "inject": true,
                                 "input": "src/styles-ar.css",
                                 "bundleName": "arabicStyle"
                             },
                             {
-                                "inject": false,
+                                "inject": true,
                                 "input": "src/styles-en.css",
                                 "bundleName": "englishStyle"
                             },
                             {
-                                "inject": false,
+                                "inject": true,
                                 "input": "src/styles-he.css",
                                 "bundleName": "hebrewStyle"
                             }
@@ -55,7 +54,6 @@
                             "optimization": true,
                             "outputHashing": "all",
                             "sourceMap": false,
-                            "extractCss": true,
                             "namedChunks": false,
                             "aot": true,
                             "extractLicenses": true,
